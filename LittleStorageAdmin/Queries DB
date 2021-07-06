@@ -1,0 +1,63 @@
+
+create table Category(
+Id INTEGER primary key autoincrement,
+Name varchar(100) not null unique,
+RegisterDate datetime not null
+);
+
+Create table Product(
+Id INTEGER primary key autoincrement,
+BarCode varchar(250) not null unique,
+Category_Id INTEGER NOT NULL,
+Description varchar(250) not null,
+SalesPrice DECIMAL(10,2) not null,
+QtyOnStock INTEGER not null,
+MinQtYOnStock INTEGER,
+MaxQtyOnStock INTEGER,
+IsEnabled bolean not null,
+RegisterDate datetime not null,
+
+-- Foreign keys
+FOREIGN KEY (Category_Id ) REFERENCES Category(Id)
+
+);
+
+
+create table Movement(
+Id INTEGER primary key autoincrement,
+Product_Id INTEGER NOT NULL,
+IsASale BOOLEAN not null,
+Commentary varchar(250),
+Qty DECIMAL(10,2) not null,
+BuyPrice DECIMAL(10,2) not null,
+RegisterDate datetime not null,
+
+--Foreign keys
+FOREIGN KEY (Product_Id) REFERENCES Product(Id)
+
+);
+
+
+
+
+/*  --- Drop tables ---
+drop table Category;
+drop TABLE Product;
+drop  TABLE Movement;
+*/
+
+/*
+insert into Category (Name, RegisterDate)
+values("N/A", DATETIME('now'));
+ */
+
+select * from Category;
+
+
+-- empty table
+delete from Categories;
+
+-- Reset Autoincrement
+DELETE FROM `sqlite_sequence` WHERE `name` = 'Categories';
+
+
