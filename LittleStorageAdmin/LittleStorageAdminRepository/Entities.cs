@@ -18,6 +18,7 @@ namespace LittleStorageAdminRepository
 
     public class Product {
         public int ProductID { get; set; }
+        public String BarCode { get; set; }
 
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
