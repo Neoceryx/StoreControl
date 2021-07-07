@@ -8,3 +8,6 @@ C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdm
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\LittleStorageAdmin.exe
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\LittleStorageAdmin.pdb
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\LittleStorageAdmin.Dashboard.resources
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\bin\Debug\LittleStorgeServices.dll
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\bin\Debug\LittleStorgeServices.pdb
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\LittleStorageAdmin.csproj.CopyComplete

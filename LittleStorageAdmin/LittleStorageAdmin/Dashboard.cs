@@ -15,6 +15,24 @@ namespace LittleStorageAdmin
         public Dashboard()
         {
             InitializeComponent();
+
+            GetCurrentDateTime();
+            timer1.Start();
+
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GetCurrentDateTime();
+        }
+
+        public async void GetCurrentDateTime() {
+
+            DateTime CurrentDateTime = DateTime.Now;
+
+            lblDateTime.Text = CurrentDateTime.ToString("MMM dddd yyyy, h:mm:ss tt");
+        }
+        // End function
+
     }
 }

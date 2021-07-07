@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LittleStorageRepository\LittleStorageRepository.csproj">
+      <Project>{94f3f71e-75a1-4dd4-9fce-3d2ee50572af}</Project>
+      <Name>LittleStorageRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
