@@ -1,0 +1,6 @@
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\bin\Debug\LittleStorageRepository.dll
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\bin\Debug\LittleStorageRepository.pdb
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\obj\Debug\LittleStorageRepository.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\obj\Debug\LittleStorageRepository.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\obj\Debug\LittleStorageRepository.dll
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageRepository\obj\Debug\LittleStorageRepository.pdb
