@@ -19,10 +19,12 @@ namespace LittleStorageAdminRepository
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionbuilder)
         {
-            optionbuilder.UseSqlite(@"Data Source=LittleStorageAdmin.db");
+            optionbuilder.UseSqlite(@"Data Source=LittleStorageAdminDB.db");
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Movement> Movements { get; set; }
 
     }
     // End class

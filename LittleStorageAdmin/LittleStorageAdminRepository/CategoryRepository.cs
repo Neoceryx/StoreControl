@@ -14,10 +14,7 @@ namespace LittleStorageAdminRepository
 
         public void InitializeCategories() {
 
-            _context.Categories.Add(new Category() { CategoryName = "Clothing", RegisterDate = DateTime.Now });
-            _context.Categories.Add(new Category() { CategoryName = "Footwear", RegisterDate = DateTime.Now });
-            _context.Categories.Add(new Category() { CategoryName = "Accessories", RegisterDate = DateTime.Now });
-
+            _context.Categories.Add(new Category() { CategoryName = "N/A", RegisterDate = DateTime.Now });
             _context.SaveChanges();
 
         }
