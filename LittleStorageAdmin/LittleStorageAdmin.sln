@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageAdmin", "LittleStorageAdmin\LittleStorageAdmin.csproj", "{EFD67DF2-3B63-430A-B531-D6A3F92F5055}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageRepository", "LittleStorageRepository\LittleStorageRepository.csproj", "{94F3F71E-75A1-4DD4-9FCE-3D2EE50572AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorgeServices", "LittleStorgeServices\LittleStorgeServices.csproj", "{4FDC7334-E42A-4E39-9148-421F047E2B6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{EFD67DF2-3B63-430A-B531-D6A3F92F5055}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFD67DF2-3B63-430A-B531-D6A3F92F5055}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFD67DF2-3B63-430A-B531-D6A3F92F5055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F3F71E-75A1-4DD4-9FCE-3D2EE50572AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F3F71E-75A1-4DD4-9FCE-3D2EE50572AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F3F71E-75A1-4DD4-9FCE-3D2EE50572AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F3F71E-75A1-4DD4-9FCE-3D2EE50572AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDC7334-E42A-4E39-9148-421F047E2B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDC7334-E42A-4E39-9148-421F047E2B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDC7334-E42A-4E39-9148-421F047E2B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDC7334-E42A-4E39-9148-421F047E2B6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
