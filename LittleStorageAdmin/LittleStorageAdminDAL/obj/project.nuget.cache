@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gPwdfzzHUANKOsNRb7MJWP+oXNYhXgc3Q1AJHcmRKYQbqs48Ad7RzlQg7alpxb0lXTFxw7BmM0/TEtFaxGEIGw==",
+  "dgSpecHash": "x6nTwVHFV6bTVRzBH55eT0eaCtm7ZA3y8alGou6HBCboLJAWv0lp7lcg46L/jCskced0+/bBik/iKTBnZcL4/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dan\\Documents\\Visual Studio 2019\\Projects\\LittleStorageAdmin\\LittleStorageAdminDAL\\LittleStorageAdminDAL.csproj",
+  "projectFilePath": "C:\\Users\\Dan\\Documents\\Visual Studio 2019\\Projects\\StoreControl\\LittleStorageAdmin\\LittleStorageAdminDAL\\LittleStorageAdminDAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,9 @@
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\bin\Debug\netcoreapp3.1\LittleStorageAdminRepository.deps.json
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\bin\Debug\netcoreapp3.1\LittleStorageAdminRepository.dll
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\bin\Debug\netcoreapp3.1\LittleStorageAdminRepository.pdb
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.csproj.AssemblyReference.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.AssemblyInfoInputs.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.AssemblyInfo.cs
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.dll
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdminRepository\obj\Debug\netcoreapp3.1\LittleStorageAdminRepository.pdb

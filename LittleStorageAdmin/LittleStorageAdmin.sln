@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageAdmin", "LittleStorageAdmin\LittleStorageAdmin.csproj", "{9D1D7E5B-0F7F-4D91-9FB4-EDCDBDB77180}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleStorageAdmin", "LittleStorageAdmin\LittleStorageAdmin.csproj", "{9D1D7E5B-0F7F-4D91-9FB4-EDCDBDB77180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageAdminRepository", "LittleStorageAdminRepository\LittleStorageAdminRepository.csproj", "{12A01698-71C2-4210-8399-C73A67117F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleStorageAdminRepository", "LittleStorageAdminRepository\LittleStorageAdminRepository.csproj", "{12A01698-71C2-4210-8399-C73A67117F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageAdminServices", "LittleStorageAdminServices\LittleStorageAdminServices.csproj", "{647E1DD7-35C7-4F6B-903F-96B33E8F8402}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LittleStorageAdminDAL", "LittleStorageAdminDAL\LittleStorageAdminDAL.csproj", "{7A46FF28-A373-4D0E-95C0-47C30705C08A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LittleStorageAdminServices", "LittleStorageAdminServices\LittleStorageAdminServices.csproj", "{647E1DD7-35C7-4F6B-903F-96B33E8F8402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{647E1DD7-35C7-4F6B-903F-96B33E8F8402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{647E1DD7-35C7-4F6B-903F-96B33E8F8402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{647E1DD7-35C7-4F6B-903F-96B33E8F8402}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A46FF28-A373-4D0E-95C0-47C30705C08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A46FF28-A373-4D0E-95C0-47C30705C08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A46FF28-A373-4D0E-95C0-47C30705C08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A46FF28-A373-4D0E-95C0-47C30705C08A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
