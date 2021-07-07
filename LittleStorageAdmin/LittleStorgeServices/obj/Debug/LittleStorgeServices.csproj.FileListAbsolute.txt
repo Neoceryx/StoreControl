@@ -1,9 +1,0 @@
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\bin\Debug\LittleStorgeServices.dll
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\bin\Debug\LittleStorgeServices.pdb
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\obj\Debug\LittleStorgeServices.csproj.AssemblyReference.cache
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\obj\Debug\LittleStorgeServices.csproj.CoreCompileInputs.cache
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\obj\Debug\LittleStorgeServices.dll
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\obj\Debug\LittleStorgeServices.pdb
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\bin\Debug\LittleStorageRepository.dll
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\bin\Debug\LittleStorageRepository.pdb
-C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorgeServices\obj\Debug\LittleStorgeServices.csproj.CopyComplete
