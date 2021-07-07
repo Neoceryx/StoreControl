@@ -21,6 +21,9 @@ namespace LittleStorageAdmin
 
             _categoryBLL = new CategoryService();
 
+            GetCurrentDateTime();
+            timer1.Start();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,6 +31,15 @@ namespace LittleStorageAdmin
             _categoryBLL.IntializeCategories();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            GetCurrentDateTime();
+        }
+
+
+        public void GetCurrentDateTime() {
+            lblDateTime.Text = DateTime.Now.ToString("MMMM dd yyyy, hh:mm:ss tt");
+        }
 
 
     }
