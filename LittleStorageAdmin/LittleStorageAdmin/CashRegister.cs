@@ -16,10 +16,5 @@ namespace LittleStorageAdmin
             txtProductCode.Focus();
             txtProductCode.Focus();
         }
-
-        private void lblProductTitle_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

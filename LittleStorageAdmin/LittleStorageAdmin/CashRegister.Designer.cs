@@ -47,8 +47,8 @@ namespace LittleStorageAdmin
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnPay = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnPay = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,6 +107,7 @@ namespace LittleStorageAdmin
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(323, 120);
             this.button1.Name = "button1";
@@ -118,7 +119,7 @@ namespace LittleStorageAdmin
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(108, 110);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
@@ -126,19 +127,18 @@ namespace LittleStorageAdmin
             // 
             this.lblProductTitle.AutoSize = true;
             this.lblProductTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblProductTitle.Location = new System.Drawing.Point(138, 165);
+            this.lblProductTitle.Location = new System.Drawing.Point(144, 165);
             this.lblProductTitle.Name = "lblProductTitle";
             this.lblProductTitle.Size = new System.Drawing.Size(139, 30);
             this.lblProductTitle.TabIndex = 20;
             this.lblProductTitle.Text = "Sabritas 30g.";
             this.lblProductTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblProductTitle.Click += new System.EventHandler(this.lblProductTitle_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(138, 239);
+            this.label3.Location = new System.Drawing.Point(144, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 21);
             this.label3.TabIndex = 21;
@@ -158,7 +158,7 @@ namespace LittleStorageAdmin
             // txtSalePrice
             // 
             this.txtSalePrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSalePrice.Location = new System.Drawing.Point(138, 263);
+            this.txtSalePrice.Location = new System.Drawing.Point(144, 246);
             this.txtSalePrice.Name = "txtSalePrice";
             this.txtSalePrice.ReadOnly = true;
             this.txtSalePrice.Size = new System.Drawing.Size(71, 29);
@@ -169,7 +169,8 @@ namespace LittleStorageAdmin
             // 
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(208, 263);
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.button2.Location = new System.Drawing.Point(214, 246);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 29);
             this.button2.TabIndex = 24;
@@ -180,6 +181,7 @@ namespace LittleStorageAdmin
             // 
             this.button3.Enabled = false;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
             this.button3.Location = new System.Drawing.Point(115, 49);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(36, 36);
@@ -231,19 +233,6 @@ namespace LittleStorageAdmin
             this.panel2.Size = new System.Drawing.Size(158, 155);
             this.panel2.TabIndex = 29;
             // 
-            // btnPay
-            // 
-            this.btnPay.Enabled = false;
-            this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPay.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPay.Location = new System.Drawing.Point(14, 108);
-            this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(137, 44);
-            this.btnPay.TabIndex = 29;
-            this.btnPay.Text = "Cobrar";
-            this.btnPay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnPay.UseVisualStyleBackColor = true;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
@@ -252,6 +241,20 @@ namespace LittleStorageAdmin
             this.panel3.Size = new System.Drawing.Size(10, 44);
             this.panel3.TabIndex = 1;
             // 
+            // btnPay
+            // 
+            this.btnPay.Enabled = false;
+            this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPay.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.btnPay.Location = new System.Drawing.Point(14, 108);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(137, 44);
+            this.btnPay.TabIndex = 29;
+            this.btnPay.Text = "Cobrar";
+            this.btnPay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnPay.UseVisualStyleBackColor = true;
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -259,11 +262,11 @@ namespace LittleStorageAdmin
             this.Producto,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 307);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 283);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(301, 131);
+            this.dataGridView1.Size = new System.Drawing.Size(301, 155);
             this.dataGridView1.TabIndex = 30;
             // 
             // Producto
@@ -305,6 +308,7 @@ namespace LittleStorageAdmin
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CashRegister";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

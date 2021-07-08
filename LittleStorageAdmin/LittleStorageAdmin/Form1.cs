@@ -47,7 +47,10 @@ namespace LittleStorageAdmin
 
         private void btnCashRegister_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Opening Cash Register");
+            CashRegister _cashRegisterForm = new CashRegister();
+            _cashRegisterForm.Show();
+            this.Hide();
+
         }
 
         private void btnInventory_MouseClick(object sender, MouseEventArgs e)
