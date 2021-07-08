@@ -16,5 +16,11 @@ namespace LittleStorageAdmin
             txtProductCode.Focus();
             txtProductCode.Focus();
         }
+
+        private void btnPay_Click(object sender, EventArgs e)
+        {
+            CloseSale _closeSaleForm = new CloseSale();
+            _closeSaleForm.Show();
+        }
     }
 }

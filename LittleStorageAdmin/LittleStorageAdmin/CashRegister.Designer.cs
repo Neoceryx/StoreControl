@@ -243,7 +243,6 @@ namespace LittleStorageAdmin
             // 
             // btnPay
             // 
-            this.btnPay.Enabled = false;
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnPay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
@@ -254,6 +253,7 @@ namespace LittleStorageAdmin
             this.btnPay.Text = "Cobrar";
             this.btnPay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnPay.UseVisualStyleBackColor = true;
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // dataGridView1
             // 
