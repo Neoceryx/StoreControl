@@ -20,13 +20,13 @@ namespace LittleStorageAdminRepository
         public int ProductID { get; set; }
         public String BarCode { get; set; }
 
-        [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public String Descritpion { get; set; }
         public Decimal SalesPrice { get; set; }
+        public String ImagePath { get; set; }
         public int QtyOnStock { get; set; }
-        public int MinQtyOnStock { get; set; }
-        public int MaxQtyOnStock { get; set; }
+        public Nullable<int> MinQtyOnStock { get; set; }
+        public Nullable<int> MaxQtyOnStock { get; set; }
         public Boolean IsEnabled { get; set; }
         public DateTime RegisterDate { get; set; }
 

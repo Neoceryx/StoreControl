@@ -5,14 +5,21 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using LittleStorageAdminServices;
+using LittleStorageAdminRepository;
 
 namespace LittleStorageAdmin
 {
     public partial class CashRegister : Form
     {
+        ProductService _productBLL;
+
         public CashRegister()
         {
+            _productBLL = new ProductService();
+
             InitializeComponent();
+            ClearProductInfo();
             txtProductCode.Focus();
             txtProductCode.Focus();
         }
@@ -29,7 +36,7 @@ namespace LittleStorageAdmin
             {
                 if (IsBarCodeValidValue() == true)
                 {
-                    MessageBox.Show("Busnado producto");
+                    GetProductInformation();
                 }
             }
         }
@@ -49,6 +56,44 @@ namespace LittleStorageAdmin
 
             return IsValid;
 
+        }
+        // End function
+
+
+        private void GetProductInformation() {
+
+            ProductInfoViewModel ProductInfo = _productBLL.GetProductByBarCodeOrDescription(txtProductCode.Text);
+
+            switch (ProductInfo.Code)
+            {
+                case -1:
+                    MessageBox.Show("Producto no encontrado");
+                    break;
+                case 0:
+                    MessageBox.Show("El producto se encuentra deshabilidado del sistema");
+                    break;
+                case 2:
+                    MessageBox.Show("El producto se encuentra Agotado. porfavor considere reabastacer el inventario");
+                    break;
+            }
+
+            #region DisplayProductInformation
+            ClearProductInfo();
+
+            if (ProductInfo.product != null)
+            {
+                lblProductTitle.Text = ProductInfo.product.Descritpion;
+                txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();
+            }    
+            #endregion
+
+
+        }
+        // End function
+
+        public void ClearProductInfo() {
+            lblProductTitle.Text = "";
+            txtSalePrice.Text = "";
         }
         // End function
 
