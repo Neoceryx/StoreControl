@@ -133,9 +133,8 @@ namespace LittleStorageAdmin
 
             }
 
-            dataGridView1.Refresh();
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = SoldProducts;
-            dataGridView1.Refresh();
 
             #region CalculatesTotalToPay
             Decimal TotalToPay = 0;
