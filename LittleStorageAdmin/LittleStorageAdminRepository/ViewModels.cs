@@ -13,4 +13,12 @@ namespace LittleStorageAdminRepository
     }
 
 
+    public class ProductSalesViewModel {
+        public String Producto { get; set; }
+        public Decimal Precio { get; set; }
+        public int Cantidad { get; set; }
+    }
+
+
+
 }

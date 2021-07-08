@@ -7,16 +7,22 @@ using System.Text;
 using System.Windows.Forms;
 using LittleStorageAdminServices;
 using LittleStorageAdminRepository;
+using System.Linq;
 
 namespace LittleStorageAdmin
 {
     public partial class CashRegister : Form
     {
+        
+        List<ProductSalesViewModel> SoldProducts;
         ProductService _productBLL;
 
         public CashRegister()
         {
             _productBLL = new ProductService();
+
+            // Initialize the list
+            SoldProducts = new List<ProductSalesViewModel>();
 
             InitializeComponent();
             ClearProductInfo();
@@ -29,6 +35,7 @@ namespace LittleStorageAdmin
             CloseSale _closeSaleForm = new CloseSale();
             _closeSaleForm.Show();
         }
+        // End function
 
         private void txtProductCode_KeyDown(object sender, KeyEventArgs e)
         {
@@ -37,10 +44,13 @@ namespace LittleStorageAdmin
                 if (IsBarCodeValidValue() == true)
                 {
                     GetProductInformation();
+
+                    txtProductCode.SelectAll();
+                    txtProductCode.Focus();
                 }
             }
         }
-
+        // End function
 
         private Boolean IsBarCodeValidValue() {
 
@@ -58,7 +68,6 @@ namespace LittleStorageAdmin
 
         }
         // End function
-
 
         private void GetProductInformation() {
 
@@ -84,9 +93,10 @@ namespace LittleStorageAdmin
             {
                 lblProductTitle.Text = ProductInfo.product.Descritpion;
                 txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();
+
+                CreateSoldProductList(ProductInfo.product);
             }    
             #endregion
-
 
         }
         // End function
@@ -94,6 +104,51 @@ namespace LittleStorageAdmin
         public void ClearProductInfo() {
             lblProductTitle.Text = "";
             txtSalePrice.Text = "";
+        }
+        // End function
+
+
+        public void CreateSoldProductList(Product ProductToStorage) {
+            
+            // Initialize the Object
+            ProductSalesViewModel _product = new ProductSalesViewModel()
+            { Producto = ProductToStorage.Descritpion, Precio = ProductToStorage.SalesPrice, Cantidad = 1};
+            
+
+            if (SoldProducts.Count == 0)
+            {
+                SoldProducts.Add(_product);
+
+            }
+            else
+            {
+                var IsInTheList = SoldProducts.Where(p => p.Producto.Equals(_product.Producto)).FirstOrDefault();
+
+                if (IsInTheList != null)
+                {
+                    IsInTheList.Cantidad += 1;
+                }
+                else
+                {
+                    SoldProducts.Add(_product);
+                }
+
+            }
+
+            // Refres the Information in the Datagrid view, to display the list of Products sold
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = SoldProducts;
+
+            #region CalculatesTotalToPay
+            Decimal TotalToPay = 0;
+            foreach (var product in SoldProducts)
+            {
+                TotalToPay += product.Cantidad * product.Precio;
+            }
+
+            txtTotalToPay.Text = TotalToPay.ToString();
+            #endregion
+
         }
         // End function
 
