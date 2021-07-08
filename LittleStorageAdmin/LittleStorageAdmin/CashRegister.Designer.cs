@@ -51,12 +51,10 @@ namespace LittleStorageAdmin
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPay = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -263,35 +261,15 @@ namespace LittleStorageAdmin
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Producto,
-            this.Column2,
-            this.Column3});
+            this.Column1});
             this.dataGridView1.Location = new System.Drawing.Point(12, 283);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(301, 155);
             this.dataGridView1.TabIndex = 30;
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Precio";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cantidad";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
             // 
             // panel4
             // 
@@ -316,6 +294,14 @@ namespace LittleStorageAdmin
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "X";
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "X";
+            this.Column1.UseColumnTextForButtonValue = true;
+            this.Column1.Width = 40;
             // 
             // CashRegister
             // 
@@ -375,11 +361,9 @@ namespace LittleStorageAdmin
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DataGridViewButtonColumn Column1;
     }
 }

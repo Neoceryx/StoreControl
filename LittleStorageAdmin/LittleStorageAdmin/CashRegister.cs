@@ -12,11 +12,16 @@ namespace LittleStorageAdmin
 {
     public partial class CashRegister : Form
     {
+        
+        List<ProductSalesViewModel> SoldProducts;
         ProductService _productBLL;
 
         public CashRegister()
         {
             _productBLL = new ProductService();
+
+            // Initialize the list
+            SoldProducts = new List<ProductSalesViewModel>();
 
             InitializeComponent();
             ClearProductInfo();
@@ -84,9 +89,10 @@ namespace LittleStorageAdmin
             {
                 lblProductTitle.Text = ProductInfo.product.Descritpion;
                 txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();
+
+                CreateSoldProductList(ProductInfo.product);
             }    
             #endregion
-
 
         }
         // End function
@@ -94,6 +100,29 @@ namespace LittleStorageAdmin
         public void ClearProductInfo() {
             lblProductTitle.Text = "";
             txtSalePrice.Text = "";
+        }
+        // End function
+
+
+        public void CreateSoldProductList(Product ProductToStorage) {
+            
+            // Initialize the Object
+            ProductSalesViewModel _product = new ProductSalesViewModel()
+            { Producto = ProductToStorage.Descritpion, Precio = ProductToStorage.SalesPrice, Cantidad = 1};
+            
+
+            if (SoldProducts.Count == 0)
+            {
+                SoldProducts.Add(_product);
+
+            }
+            else
+            {
+                SoldProducts.Add(_product);
+            }
+
+            dataGridView1.DataSource = SoldProducts;
+
         }
         // End function
 
