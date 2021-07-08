@@ -29,6 +29,7 @@ namespace LittleStorageAdmin
             CloseSale _closeSaleForm = new CloseSale();
             _closeSaleForm.Show();
         }
+        // End function
 
         private void txtProductCode_KeyDown(object sender, KeyEventArgs e)
         {
@@ -40,7 +41,7 @@ namespace LittleStorageAdmin
                 }
             }
         }
-
+        // End function
 
         private Boolean IsBarCodeValidValue() {
 
@@ -58,7 +59,6 @@ namespace LittleStorageAdmin
 
         }
         // End function
-
 
         private void GetProductInformation() {
 
