@@ -63,7 +63,22 @@ namespace LittleStorageAdmin
 
             ProductInfoViewModel ProductInfo = _productBLL.GetProductByBarCodeOrDescription(txtProductCode.Text);
 
-            MessageBox.Show("a");
+            switch (ProductInfo.Code)
+            {
+                case -1:
+                    MessageBox.Show("Producto no encontrado");
+                    break;
+                case 0:
+                    MessageBox.Show("El producto se encuentra deshabilidado del sistema");
+                    break;
+            }
+
+            #region DisplayProductInformation
+            lblProductTitle.Text = ProductInfo.product.Descritpion;
+            txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();            
+            #endregion
+
+
         }
         // End function
 
