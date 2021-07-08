@@ -5,13 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using LittleStorageAdminServices;
 
 namespace LittleStorageAdmin
 {
     public partial class CashRegister : Form
     {
+        ProductService _productBLL;
+
         public CashRegister()
         {
+            _productBLL = new ProductService();
+
             InitializeComponent();
             txtProductCode.Focus();
             txtProductCode.Focus();
@@ -29,7 +34,7 @@ namespace LittleStorageAdmin
             {
                 if (IsBarCodeValidValue() == true)
                 {
-                    MessageBox.Show("Busnado producto");
+                    GetProductInformation();
                 }
             }
         }
@@ -49,6 +54,14 @@ namespace LittleStorageAdmin
 
             return IsValid;
 
+        }
+        // End function
+
+
+        private void GetProductInformation() {
+            String ProductValue = txtProductCode.Text;
+            String result = _productBLL.GetProductByBarCodeOrDescription(ProductValue);
+            MessageBox.Show(result);
         }
         // End function
 
