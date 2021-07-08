@@ -44,6 +44,9 @@ namespace LittleStorageAdmin
                 if (IsBarCodeValidValue() == true)
                 {
                     GetProductInformation();
+
+                    txtProductCode.SelectAll();
+                    txtProductCode.Focus();
                 }
             }
         }
@@ -119,20 +122,20 @@ namespace LittleStorageAdmin
             }
             else
             {
-                var IsInList = SoldProducts.Where(p => p.Producto.Equals(_product.Producto)).FirstOrDefault();
+                var IsInTheList = SoldProducts.Where(p => p.Producto.Equals(_product.Producto)).FirstOrDefault();
 
-                if (IsInList != null)
+                if (IsInTheList != null)
                 {
-                    IsInList.Cantidad += 1;
+                    IsInTheList.Cantidad += 1;
                 }
                 else
                 {
                     SoldProducts.Add(_product);
                 }
 
-
             }
 
+            // Refres the Information in the Datagrid view, to display the list of Products sold
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = SoldProducts;
 
@@ -145,7 +148,6 @@ namespace LittleStorageAdmin
 
             txtTotalToPay.Text = TotalToPay.ToString();
             #endregion
-
 
         }
         // End function

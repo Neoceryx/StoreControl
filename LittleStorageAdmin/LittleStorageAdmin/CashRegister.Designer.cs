@@ -261,12 +261,15 @@ namespace LittleStorageAdmin
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
             this.dataGridView1.Location = new System.Drawing.Point(12, 283);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(301, 155);
             this.dataGridView1.TabIndex = 30;
@@ -275,6 +278,7 @@ namespace LittleStorageAdmin
             // 
             this.Column1.HeaderText = "X";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             this.Column1.Text = "X";
             this.Column1.UseColumnTextForButtonValue = true;
             this.Column1.Width = 40;
