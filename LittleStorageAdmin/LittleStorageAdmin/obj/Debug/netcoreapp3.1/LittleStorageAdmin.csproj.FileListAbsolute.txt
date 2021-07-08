@@ -71,3 +71,6 @@ C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdm
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.dll
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.pdb
 C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.genruntimeconfig.cache
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.Properties.Resources.resources
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.CashRegister.resources
+C:\Users\Dan\Documents\Visual Studio 2019\Projects\StoreControl\LittleStorageAdmin\LittleStorageAdmin\obj\Debug\netcoreapp3.1\LittleStorageAdmin.CloseSale.resources
