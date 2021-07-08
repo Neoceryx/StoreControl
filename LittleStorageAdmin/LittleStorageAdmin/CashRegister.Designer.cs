@@ -53,6 +53,8 @@ namespace LittleStorageAdmin
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -91,7 +93,7 @@ namespace LittleStorageAdmin
             this.txtProductCode.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtProductCode.Location = new System.Drawing.Point(14, 120);
             this.txtProductCode.Name = "txtProductCode";
-            this.txtProductCode.Size = new System.Drawing.Size(310, 29);
+            this.txtProductCode.Size = new System.Drawing.Size(257, 29);
             this.txtProductCode.TabIndex = 16;
             // 
             // label2
@@ -109,7 +111,7 @@ namespace LittleStorageAdmin
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(323, 120);
+            this.button1.Location = new System.Drawing.Point(269, 120);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 29);
             this.button1.TabIndex = 18;
@@ -138,7 +140,7 @@ namespace LittleStorageAdmin
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(144, 222);
+            this.label3.Location = new System.Drawing.Point(260, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 21);
             this.label3.TabIndex = 21;
@@ -158,7 +160,7 @@ namespace LittleStorageAdmin
             // txtSalePrice
             // 
             this.txtSalePrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtSalePrice.Location = new System.Drawing.Point(144, 246);
+            this.txtSalePrice.Location = new System.Drawing.Point(213, 245);
             this.txtSalePrice.Name = "txtSalePrice";
             this.txtSalePrice.ReadOnly = true;
             this.txtSalePrice.Size = new System.Drawing.Size(71, 29);
@@ -170,7 +172,7 @@ namespace LittleStorageAdmin
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.button2.Location = new System.Drawing.Point(214, 246);
+            this.button2.Location = new System.Drawing.Point(283, 245);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 29);
             this.button2.TabIndex = 24;
@@ -287,13 +289,35 @@ namespace LittleStorageAdmin
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.panel4.Location = new System.Drawing.Point(467, 246);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 28);
+            this.panel4.TabIndex = 30;
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.button4.Location = new System.Drawing.Point(359, 246);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(118, 29);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Cancelar venta";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // CashRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(255)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(489, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtSalePrice);
@@ -345,5 +369,7 @@ namespace LittleStorageAdmin
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button4;
     }
 }
