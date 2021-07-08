@@ -11,15 +11,12 @@ namespace LittleStorageAdminRepository
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
         public DateTime RegisterDate { get; set; }
-
-        public virtual Product Product { get; set; }
-
     }
 
     public class Product {
         public int ProductID { get; set; }
         public String BarCode { get; set; }
-
+        [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public String Descritpion { get; set; }
         public Decimal SalesPrice { get; set; }

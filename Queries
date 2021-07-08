@@ -1,0 +1,13 @@
+
+SELECT * FROM Categories;
+
+SELECT * FROM Products;
+
+INSERT INTO Products (BarCode,CategoryID,Descritpion, SalesPrice, ImagePath,QtyOnStock, MinQtyOnStock, MaxQtyOnStock,IsEnabled, RegisterDate)
+VALUES 
+('01', 1, 'Coca cola 30 ml', 12.50, null, 10, null, null, 1,DATETIME('now')),
+('02', 1, 'Sabritas 20g', 10.50, null, 10, null, null, 1,DATETIME('now'));
+
+Update Products
+set IsEnabled = 1, QtyOnStock = 0
+Where ProductID = 2;
