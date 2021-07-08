@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LittleStorageAdminRepository
@@ -12,6 +13,14 @@ namespace LittleStorageAdminRepository
             _context = new DBContext();
         }
 
+        public Product GetProductByBarCodeOrDescription(String ProductVal) {
+
+            Product _productRetrived = _context.Products.Where(x => x.BarCode == ProductVal).FirstOrDefault();
+
+            return _productRetrived;
+
+        }
+        // End function
 
 
 

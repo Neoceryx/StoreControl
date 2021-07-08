@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using LittleStorageAdminServices;
+using LittleStorageAdminRepository;
 
 namespace LittleStorageAdmin
 {
@@ -60,8 +61,10 @@ namespace LittleStorageAdmin
 
         private void GetProductInformation() {
             String ProductValue = txtProductCode.Text;
-            String result = _productBLL.GetProductByBarCodeOrDescription(ProductValue);
-            MessageBox.Show(result);
+
+            ProductInfoViewModel ProductInfo = _productBLL.GetProductByBarCodeOrDescription(ProductValue);
+
+            MessageBox.Show("a");
         }
         // End function
 

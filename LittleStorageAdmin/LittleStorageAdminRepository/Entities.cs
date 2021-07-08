@@ -26,8 +26,8 @@ namespace LittleStorageAdminRepository
         public Decimal SalesPrice { get; set; }
         public String ImagePath { get; set; }
         public int QtyOnStock { get; set; }
-        public int MinQtyOnStock { get; set; }
-        public int MaxQtyOnStock { get; set; }
+        public Nullable<int> MinQtyOnStock { get; set; }
+        public Nullable<int> MaxQtyOnStock { get; set; }
         public Boolean IsEnabled { get; set; }
         public DateTime RegisterDate { get; set; }
 
