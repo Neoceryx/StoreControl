@@ -72,6 +72,9 @@ namespace LittleStorageAdmin
                 case 0:
                     MessageBox.Show("El producto se encuentra deshabilidado del sistema");
                     break;
+                case 2:
+                    MessageBox.Show("El producto se encuentra Agotado. porfavor considere reabastacer el inventario");
+                    break;
             }
 
             #region DisplayProductInformation

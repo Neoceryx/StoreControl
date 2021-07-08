@@ -34,6 +34,14 @@ namespace LittleStorageAdminServices
                     _response.product = null;
                 }
 
+                if (_productRetreived.QtyOnStock == 0)
+                {
+                    _response.Code = 2;
+                    _response.CodeReason = "Does not have Product amount on stock";
+                    _response.product = null;
+
+                }
+
             }
 
             return _response;
