@@ -16,16 +16,22 @@ namespace LittleStorageAdminServices
 
         public ProductInfoViewModel GetProductByBarCodeOrDescription(String ProductValue) {
 
-            ProductInfoViewModel _response = new ProductInfoViewModel();
+            ProductInfoViewModel _response = new ProductInfoViewModel() { Code = -1, CodeReason = "Product was not found", product = null };
 
             Product _productRetreived = _productDal.GetProductByBarCodeOrDescription(ProductValue);
 
-
             if (_productRetreived != null)
             {
+
+                _response.Code = 1;
+                _response.CodeReason = "Product Retrieved successfully";
+                _response.product = _productRetreived;
+
                 if (_productRetreived.IsEnabled == false)
                 {
-                    _productRetreived = null;
+                    _response.Code = 0;
+                    _response.CodeReason = "Product Is Disabled";
+                    _response.product = null;
                 }
 
             }

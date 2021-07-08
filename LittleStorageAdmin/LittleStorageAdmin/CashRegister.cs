@@ -60,9 +60,8 @@ namespace LittleStorageAdmin
 
 
         private void GetProductInformation() {
-            String ProductValue = txtProductCode.Text;
 
-            ProductInfoViewModel ProductInfo = _productBLL.GetProductByBarCodeOrDescription(ProductValue);
+            ProductInfoViewModel ProductInfo = _productBLL.GetProductByBarCodeOrDescription(txtProductCode.Text);
 
             MessageBox.Show("a");
         }
