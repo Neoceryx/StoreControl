@@ -44,17 +44,17 @@ namespace LittleStorageAdmin
             this.txtSalePrice = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotalToPay = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnPay = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -193,15 +193,15 @@ namespace LittleStorageAdmin
             this.button3.Text = "$";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtTotalToPay
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(14, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(102, 36);
-            this.textBox1.TabIndex = 27;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotalToPay.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtTotalToPay.Location = new System.Drawing.Point(14, 49);
+            this.txtTotalToPay.Name = "txtTotalToPay";
+            this.txtTotalToPay.ReadOnly = true;
+            this.txtTotalToPay.Size = new System.Drawing.Size(102, 36);
+            this.txtTotalToPay.TabIndex = 27;
+            this.txtTotalToPay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -228,7 +228,7 @@ namespace LittleStorageAdmin
             // 
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btnPay);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtTotalToPay);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
@@ -271,6 +271,14 @@ namespace LittleStorageAdmin
             this.dataGridView1.Size = new System.Drawing.Size(301, 155);
             this.dataGridView1.TabIndex = 30;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "X";
+            this.Column1.Name = "Column1";
+            this.Column1.Text = "X";
+            this.Column1.UseColumnTextForButtonValue = true;
+            this.Column1.Width = 40;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
@@ -294,14 +302,6 @@ namespace LittleStorageAdmin
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "X";
-            this.Column1.Name = "Column1";
-            this.Column1.Text = "X";
-            this.Column1.UseColumnTextForButtonValue = true;
-            this.Column1.Width = 40;
             // 
             // CashRegister
             // 
@@ -354,7 +354,7 @@ namespace LittleStorageAdmin
         private System.Windows.Forms.TextBox txtSalePrice;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotalToPay;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;

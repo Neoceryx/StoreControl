@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using LittleStorageAdminServices;
 using LittleStorageAdminRepository;
+using System.Linq;
 
 namespace LittleStorageAdmin
 {
@@ -118,10 +119,34 @@ namespace LittleStorageAdmin
             }
             else
             {
-                SoldProducts.Add(_product);
+                var IsInList = SoldProducts.Where(p => p.Producto.Equals(_product.Producto)).FirstOrDefault();
+
+                if (IsInList != null)
+                {
+                    IsInList.Cantidad += 1;
+                }
+                else
+                {
+                    SoldProducts.Add(_product);
+                }
+
+
             }
 
+            dataGridView1.Refresh();
             dataGridView1.DataSource = SoldProducts;
+            dataGridView1.Refresh();
+
+            #region CalculatesTotalToPay
+            Decimal TotalToPay = 0;
+            foreach (var product in SoldProducts)
+            {
+                TotalToPay += product.Cantidad * product.Precio;
+            }
+
+            txtTotalToPay.Text = TotalToPay.ToString();
+            #endregion
+
 
         }
         // End function
