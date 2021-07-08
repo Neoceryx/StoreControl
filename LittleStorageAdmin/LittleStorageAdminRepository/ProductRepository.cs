@@ -6,5 +6,14 @@ namespace LittleStorageAdminRepository
 {
     public class ProductRepository
     {
+        DBContext _context;
+
+        public ProductRepository() {
+            _context = new DBContext();
+        }
+
+
+
+
     }
 }

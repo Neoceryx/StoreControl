@@ -24,6 +24,7 @@ namespace LittleStorageAdminRepository
         public int CategoryID { get; set; }
         public String Descritpion { get; set; }
         public Decimal SalesPrice { get; set; }
+        public String ImagePath { get; set; }
         public int QtyOnStock { get; set; }
         public int MinQtyOnStock { get; set; }
         public int MaxQtyOnStock { get; set; }
