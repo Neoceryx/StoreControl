@@ -19,6 +19,7 @@ namespace LittleStorageAdmin
             _productBLL = new ProductService();
 
             InitializeComponent();
+            ClearProductInfo();
             txtProductCode.Focus();
             txtProductCode.Focus();
         }
@@ -74,11 +75,22 @@ namespace LittleStorageAdmin
             }
 
             #region DisplayProductInformation
-            lblProductTitle.Text = ProductInfo.product.Descritpion;
-            txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();            
+            ClearProductInfo();
+
+            if (ProductInfo.product != null)
+            {
+                lblProductTitle.Text = ProductInfo.product.Descritpion;
+                txtSalePrice.Text = ProductInfo.product.SalesPrice.ToString();
+            }    
             #endregion
 
 
+        }
+        // End function
+
+        public void ClearProductInfo() {
+            lblProductTitle.Text = "";
+            txtSalePrice.Text = "";
         }
         // End function
 
